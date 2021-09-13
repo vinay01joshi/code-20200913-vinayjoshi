@@ -1,8 +1,11 @@
 const HttpStatus = require('http-status-codes');
+const dataService = require('../services/data-processor');
 
 exports.process = (req, res) => {
-    res.status(HttpStatus.OK).send({
-        message: 'Dummy Method',
-        status: HttpStatus.OK
-    });
+
+    // Process the data
+    var modifiedData = dataService.processData();
+
+    // Send the response
+    res.status(HttpStatus.OK).send(modifiedData);
 }
