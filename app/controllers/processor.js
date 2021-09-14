@@ -9,3 +9,11 @@ exports.process = (req, res) => {
     // Send the response
     res.status(HttpStatus.OK).send(modifiedData);
 }
+
+
+exports.createLargeJson = (req, res) => {
+
+    dataService.createJsonFile();
+
+    res.status(HttpStatus.OK).send(true);
+}
