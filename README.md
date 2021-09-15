@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/vinay01joshi/code-20200913-vinayjoshi/actions/workflows/node.js.yml/badge.svg)](https://github.com/vinay01joshi/code-20200913-vinayjoshi/actions/workflows/node.js.yml)
+
 # About the Project
 
 Node Application to Process the Json.
