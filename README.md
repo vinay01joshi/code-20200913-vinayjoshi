@@ -27,3 +27,7 @@ Node Application to Process the Json.
 - Processoed Json you can find in below location
 
   - `/app/data/processed-large.json`
+
+### How to run automated test on the project
+
+- `npm test`
