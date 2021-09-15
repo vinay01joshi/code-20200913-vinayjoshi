@@ -46,7 +46,7 @@ const saveProcessodJson = (data) => {
     })
 }
 
-const evaluateHealthRisk = (bmi) => {
+exports.evaluateHealthRisk = (bmi) => {
 
     if (bmi < 18.4) return "Malnutrition risk";
 
@@ -61,7 +61,7 @@ const evaluateHealthRisk = (bmi) => {
     if (bmi > 40) return "Very high risk";
 }
 
-const evaluateBmiCateogory = (bmi) => {
+exports.evaluateBmiCateogory = (bmi) => {
     if (bmi < 18.4) return "Underweight";
 
     if (bmi > 18.5 && bmi <= 24.9) return "Normal weight";
@@ -76,7 +76,7 @@ const evaluateBmiCateogory = (bmi) => {
 }
 
 
-const calulcateBmi = (data) => {
+exports.calulcateBmi = (data) => {
     if (heightInMeter === 0) return 0;
 
     var heightInMeter = data.HeightCm / 100;
